@@ -8,14 +8,15 @@ const elementos =[
 
 ];
 
-const container = document.querySelector('container');
+const container = document.querySelector('.container');
  const div = document.createElement('div');
 
 for (let i =0 ; i <elementos.length; i++) {
 
     let {tag, texto} = elementos[i];
-    let tagCriada = document.createElement(tag)
-    tagCriada.innerHtml =texto;
+    let tagCriada = document.createElement(tag);
+    let textoCriado =document.createTextNode(texto)
+    tagCriada.appendChild(textoCriado)
     div.appendChild(tagCriada);
 
 
@@ -24,4 +25,3 @@ for (let i =0 ; i <elementos.length; i++) {
 }
 
 container.appendChild(div);
-alert(1)

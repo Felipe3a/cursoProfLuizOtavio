@@ -1,6 +1,10 @@
 function zoroAEsquerda(num) {
   return num >= 10 ? num : `0${num}`;
+
+
 }
+
+
 function formataData(data) {
   const dia = zoroAEsquerda(data.getDate());
   const mes = zoroAEsquerda(data.getMonth() + 1);
